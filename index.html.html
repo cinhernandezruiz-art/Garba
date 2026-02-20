@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GARBA Seguridad Privada</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background-color:#000;
+    color:white;
+}
+
+header{
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    border-bottom:3px solid #556B2F;
+}
+
+header img{
+    height:70px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#556B2F;
+}
+
+.hero{
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url('portada.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.empresa{
+    position: relative;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+    color: #556B2F;
+    overflow: hidden;
+}
+
+.empresa::before{
+    content: "GARBA SEGURIDAD PRIVADA";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255,255,255,0.8),
+        transparent 80%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: brillo 4s linear infinite;
+}
+
+@keyframes brillo{
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.slogan{
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+}
+
+.btn{
+    background:#556B2F;
+    color:white;
+    padding:14px 35px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+    opacity:0;
+    animation: aparecer 2.5s ease-out forwards;
+    animation-delay: 1s;
+}
+.btn:hover{
+    background:white;
+    color:#556B2F;
+}
+
+.section{
+    padding:80px 50px;
+    text-align:center;
+    background:#111;
+}
+
+.section h2{
+    color:#556B2F;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:30px;
+    width:280px;
+    border-radius:10px;
+    border:1px solid #556B2F;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#222;
+}
+
+<section class="section">
+    <h2>Certificaciones y Permisos</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Seguridad Pública</h3>
+            <p>Permisos vigentes conforme a la legislación mexicana.</p>
+        </div>
+
+        <div class="card">
+            <h3>CTPAT</h3>
+            <p>Cumplimiento en estándares internacionales de seguridad.</p>
+        </div>
+
+        <div class="card">
+            <h3>REPSE</h3>
+            <p>Registro de Prestadoras de Servicios Especializados.</p>
+        </div>
+    </div>
+</section>
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    border-top:2px solid #556B2F;
+    font-size:14px;
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#556B2F;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+
+.whatsapp:hover{
+    background:white;
+    color:#556B2F;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="GARBA Seguridad Privada">
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#politica">Política</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+
+    <h1 class="empresa">GARBA SEGURIDAD PRIVADA</h1>
+
+    <h2 class="slogan">Protección y Confianza 24/7</h2>
+    <p>Empresa líder en seguridad privada en Monterrey.</p>
+    <a href="#contacto" class="btn">Solicitar Cotización</a>
+</section>
+
+<section class="section" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Seguridad Intramuros</h3>
+            <p>Protección profesional para empresas, industrias y residenciales.</p>
+        </div>
+        <div class="card">
+            <h3>Vigilancia 24/7</h3>
+            <p>Supervisión permanente con protocolos de respuesta inmediata.</p>
+        </div>
+        <div class="card">
+            <h3>CCTV y Control de Acceso</h3>
+            <p>Tecnología avanzada en monitoreo y prevención.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="nosotros">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+        GARBA SEGURIDAD PRIVADA es una empresa formada por personal con vasta experiencia
+        y amplio potencial aplicado a las Leyes Mexicanas en Seguridad Privada.
+        Se ha consolidado tomando una posición de liderazgo en el sector de servicios
+        a empresas, destacando por su desarrollo constante y planeación estratégica.
+    </p>
+    <p>
+        Contamos con todos los permisos de Seguridad Pública, certificación CTPAT y registro REPSE.
+    </p>
+</section>
+
+<section class="section" id="politica">
+    <h2>Política de la Empresa</h2>
+    <p>
+        Garantizar la calidad en la seguridad y protección de nuestros clientes y colaboradores
+        mediante procesos establecidos, asegurando cumplimiento legal, profesionalismo y mejora continua.
+    </p>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono / WhatsApp:</strong> 81 2922 5285</p>
+    <p><strong>Correo:</strong> garbaseguridadprivada@gmail.com</p>
+    <p><strong>Ubicación:</strong> Bernardo Reyes 1805-B, Col. Industrial, Monterrey, Nuevo León</p>
+</section>
+
+<footer>
+    © 2026 GARBA Seguridad Privada | Monterrey, Nuevo León | Todos los derechos reservados
+</footer>
+
+<!-- Botón WhatsApp -->
+<a href="https://wa.me/528129225285" class="whatsapp" target="_blank">
+    WhatsApp
+</a>
+
+</body>
+</html>
