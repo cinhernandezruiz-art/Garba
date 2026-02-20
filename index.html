@@ -4,19 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GARBA Seguridad Privada en Monterrey | Seguridad 24/7</title>
+<title>GARBA Seguridad Privada en Monterrey | Guardias y Vigilancia 24/7</title>
 
-<meta name="description" content="Empresa de seguridad privada en Monterrey. Vigilancia 24/7, guardias intramuros, control de accesos y CCTV. GARBA Seguridad Privada cuenta con permisos de Seguridad Pública, CTPAT y REPSE.">
+<meta name="description" content="Empresa de seguridad privada en Monterrey. Guardias de seguridad, vigilancia 24/7, protección empresarial, control de accesos y CCTV. GARBA Seguridad Privada cuenta con permisos de Seguridad Pública, CTPAT y REPSE.">
 
-<meta name="keywords" content="seguridad privada en Monterrey, guardias de seguridad Monterrey, vigilancia 24 horas Monterrey, empresa de seguridad Monterrey">
+<meta name="keywords" content="seguridad privada en Monterrey, guardias de seguridad Monterrey, empresa de seguridad Monterrey, vigilancia 24 horas Monterrey">
 
 <meta name="author" content="GARBA Seguridad Privada">
+
 <meta name="robots" content="index, follow">
 
 <meta name="google-site-verification" content="tl2tz9U_QmkVeuZyQ1MUMwtC38KeQmAAmL0WPSq6ed0" />
 
-<style>
+<meta property="og:title" content="GARBA Seguridad Privada en Monterrey">
+<meta property="og:description" content="Protección y confianza 24/7 en Monterrey. Empresa certificada en seguridad privada.">
+<meta property="og:type" content="website">
 
+<style>
 body{
     margin:0;
     font-family:'Segoe UI',sans-serif;
@@ -24,7 +28,6 @@ body{
     color:white;
 }
 
-/* HEADER */
 header{
     background:#111;
     display:flex;
@@ -35,7 +38,7 @@ header{
 }
 
 header img{
-    height:80px;
+    height:70px;
 }
 
 nav a{
@@ -50,14 +53,14 @@ nav a:hover{
     color:#556B2F;
 }
 
-/* HERO */
 .hero{
     background:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
         url('portada.jpg');
-    background-size:cover;
-    background-position:center;
-    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -65,46 +68,28 @@ nav a:hover{
     text-align:center;
 }
 
-/* TEXTO METÁLICO VERDE */
 .empresa{
-    font-size:75px;
+    font-size:60px;
     font-weight:900;
     text-transform:uppercase;
-    letter-spacing:6px;
-    background:linear-gradient(
-        90deg,
-        #2e3b12,
-        #556B2F,
-        #ffffff,
-        #556B2F,
-        #2e3b12
-    );
-    background-size:300%;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    animation:brillo 5s linear infinite;
-}
-
-@keyframes brillo{
-    0%{background-position:0%;}
-    100%{background-position:300%;}
+    letter-spacing:4px;
+    color:#556B2F;
 }
 
 .slogan{
-    font-size:32px;
-    margin-top:20px;
+    font-size:28px;
     font-weight:300;
 }
 
 .btn{
-    margin-top:30px;
     background:#556B2F;
     color:white;
-    padding:15px 35px;
+    padding:14px 35px;
     text-decoration:none;
     border-radius:5px;
     font-weight:bold;
     transition:0.3s;
+    margin-top:20px;
 }
 
 .btn:hover{
@@ -112,7 +97,6 @@ nav a:hover{
     color:#556B2F;
 }
 
-/* SECCIONES */
 .section{
     padding:80px 50px;
     text-align:center;
@@ -122,6 +106,7 @@ nav a:hover{
 .section h2{
     color:#556B2F;
     margin-bottom:40px;
+    font-size:32px;
 }
 
 .services{
@@ -150,9 +135,9 @@ footer{
     text-align:center;
     padding:25px;
     border-top:2px solid #556B2F;
+    font-size:14px;
 }
 
-/* BOTÓN WHATSAPP */
 .whatsapp{
     position:fixed;
     bottom:20px;
@@ -164,6 +149,7 @@ footer{
     text-decoration:none;
     font-weight:bold;
     box-shadow:0px 0px 15px rgba(0,0,0,0.5);
+    transition:0.3s;
 }
 
 .whatsapp:hover{
@@ -172,31 +158,34 @@ footer{
 }
 
 @media(max-width:768px){
-    .empresa{
-        font-size:40px;
-    }
     header{
         flex-direction:column;
     }
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo.png" alt="GARBA Seguridad Privada">
+    <img src="logo.png" alt="GARBA Seguridad Privada en Monterrey">
     <nav>
+        <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
+        <a href="#politica">Política</a>
         <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="inicio">
     <h1 class="empresa">GARBA SEGURIDAD PRIVADA</h1>
     <h2 class="slogan">Protección y Confianza 24/7</h2>
+    <p>
+        Empresa de seguridad privada en Monterrey especializada en guardias de seguridad,
+        vigilancia 24 horas, protección empresarial, control de accesos y sistemas CCTV.
+        Servicio profesional 24/7.
+    </p>
     <a href="#contacto" class="btn">Solicitar Cotización</a>
 </section>
 
@@ -205,11 +194,11 @@ footer{
     <div class="services">
         <div class="card">
             <h3>Seguridad Intramuros</h3>
-            <p>Protección profesional para empresas e industrias.</p>
+            <p>Protección profesional para empresas, industrias y residenciales.</p>
         </div>
         <div class="card">
             <h3>Vigilancia 24/7</h3>
-            <p>Supervisión permanente con respuesta inmediata.</p>
+            <p>Supervisión permanente con protocolos de respuesta inmediata.</p>
         </div>
         <div class="card">
             <h3>CCTV y Control de Acceso</h3>
@@ -221,9 +210,16 @@ footer{
 <section class="section" id="nosotros">
     <h2>¿Quiénes Somos?</h2>
     <p>
-        GARBA Seguridad Privada es una empresa formada por personal con vasta experiencia
-        en las Leyes Mexicanas en Seguridad Privada. Contamos con permisos de Seguridad Pública,
-        certificación CTPAT y registro REPSE.
+        GARBA Seguridad Privada es una empresa de seguridad privada en Monterrey formada por personal con amplia experiencia en leyes mexicanas de seguridad privada.
+        Nos especializamos en vigilancia empresarial, protección industrial y servicios intramuros.
+    </p>
+</section>
+
+<section class="section" id="politica">
+    <h2>Política de la Empresa</h2>
+    <p>
+        Garantizar la calidad en la seguridad y protección de nuestros clientes mediante procesos profesionales,
+        cumplimiento legal, certificaciones vigentes y mejora continua.
     </p>
 </section>
 
@@ -234,8 +230,17 @@ footer{
     <p><strong>Ubicación:</strong> Bernardo Reyes 1805-B, Col. Industrial, Monterrey, Nuevo León</p>
 </section>
 
+<section class="section">
+    <h2>Empresa de Seguridad Privada en Monterrey</h2>
+    <p>
+        GARBA Seguridad Privada ofrece cobertura en Monterrey, San Nicolás, Apodaca, Guadalupe
+        y toda el área metropolitana. Contamos con permisos de Seguridad Pública,
+        certificación CTPAT y registro REPSE vigente.
+    </p>
+</section>
+
 <footer>
-    © 2026 GARBA Seguridad Privada | Monterrey
+    © 2026 GARBA Seguridad Privada | Monterrey, Nuevo León | Todos los derechos reservados
 </footer>
 
 <a href="https://wa.me/528129225285" class="whatsapp" target="_blank">
